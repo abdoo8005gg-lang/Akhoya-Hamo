@@ -12,8 +12,7 @@ function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('on');setT
 
 // ----- الموسيقى (اختيارية، لا تعمل تلقائيًا) -----
 const au=$('#audio');
-$('#music').onclick=()=>{ if(au.paused){au.play().catch(()=>toast('ضع الملف في assets/audio/birthday-song.mp3'));$('#music').textContent='🔇 إيقاف الموسيقى'}else{au.pause();$('#music').textContent='🎵 تشغيل الموسيقى'} };
-
+$('#music').onclick = () => { if (au.paused) { au.play().catch(() => toast('عفواً، تعذر تشغيل الصوت')); $('#music').textContent = '🔇 إيقاف الموسيقى'; } else { au.pause(); $('#music').textContent = '🎵 تشغيل الموسيقى'; } };
 // ----- التنقل بين الفصول -----
 function go(i){
   if(i>=scenes.length)return;
