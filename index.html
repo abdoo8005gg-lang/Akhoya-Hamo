@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>هدية اخويا حمو❤️ </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- 🎵 ضع الأغنية هنا: assets/audio/birthday-song.mp3 -->
+<audio id="audio" src="assets/audio/birthday-song.mp3" loop preload="none"></audio>
+<button id="music">🎵 تشغيل الموسيقى</button>
+<canvas id="fx"></canvas><div id="toast"></div>
+<button id="next">التالي ←</button>
+
+<!-- كل <section class="scene"> فصل. عدّل النصوص (<p class="ln">) بحرية. -->
+
+<section class="scene" id="s0"><div>
+  <p id="type" class="big" style="font-size:clamp(1.5rem,6vw,2.4rem);min-height:3.5em"></p>
+  <h1 id="hamo" class="hi" style="font-size:clamp(3.5rem,16vw,6rem);opacity:0;transition:2s">حمو ❤️</h1>
+  <button id="start" style="display:none">ابدأ الحكاية ←</button>
+</div></section>
+
+<section class="scene" id="s1"><div>
+  <p class="tag">CHAPTER 01 · THE BEGINNING</p><h2>قبل ما يبقى حمو... 👶</h2>
+  <p class="big hi ln" style="font-size:2.2rem">8 · 10 · 2007</p>
+  <p class="ln">في اليوم ده، الدنيا كسبت واحد هيبقى بعد سنين أخويا وصاحبي وأقرب الناس ليا.</p>
+  <p class="ln"><span id="egg1" style="cursor:pointer">✨</span> نجمة صغيرة اتولدت معاه... جرّب تدوس عليها.</p>
+</div></section>
+
+<section class="scene" id="s2"><div>
+  <p class="tag">CHAPTER 02</p><h2>أيام ميس أمل... وهنا بدأت المصايب 😂</h2>
+  <p class="ln">أيام اللعب والمشاكل والضحك. وفي أرشيف الأمن عندنا ملفات قديمة...</p>
+  <button id="crimes">افتح ملف الجرائم القديمة 😂</button>
+  <div class="grid" id="crimeGrid" hidden>
+    <div class="card"><b>عملية الغديوة</b>خطة محكمة، تنفيذ اسطوري، والمتهمين معروفين.</div>
+    <div class="card"><b>الحرب العالمية مع البنات</b>لا غالب ولا مغلوب... بس ميس أمل كانت بتعاقب الاتنين.</div>
+    <div class="card"><b>أيام ميس أمل</b>أحلى أيام. ولا حد كان يعرف.</div>
+  </div>
+</div></section>
+
+<section class="scene" id="s3"><div>
+  <p class="tag">CHAPTER 03</p><h2>قبل الجيم... كان الملعب ⚽</h2>
+  <div id="ball">⚽</div>
+  <p class="ln">جري وصراخ وأهداف مش محتسبة وخناقات على الجزاء.</p>
+  <p class="ln hi">كبرنا... بس واضح إن اللعب مخلصش.</p>
+</div></section>
+
+<section class="scene" id="s4"><div>
+  <p class="tag">CHAPTER 04</p><h2>الغريب إن كل سنة كانت بتخلينا أقرب.</h2>
+  <p class="ln">كل سنة كنا بنكبر فيها، كنا بنفهم قيمة بعض أكتر.</p>
+  <p class="ln">بقينا مش بس بنضحك سوا...</p>
+  <p class="ln hi">بقينا بنخاف على مستقبل بعض.</p>
+</div></section>
+
+<section class="scene" id="s5"><div>
+  <p class="tag">CHAPTER 05</p><h2>ثانوي... المرحلة اللي محتاجة قصة لوحدها 😂</h2>
+  <div class="grid">
+    <div class="card" data-m="ساعات كنا بنكسب وساعات بنقول 'مرة كمان'. الصايبر مكنش لعبة، كان يوم بنعيشو."><b>🎮 الصايبر</b>اضغط</div>
+    <div class="card" data-m="بينج بونج... وتحدي مين هيشيل اندر😂  ."><b>🏓 بينج</b>اضغط</div>
+    <div class="card" data-m="تحديات، مغامرات، وهزار مكنش بيخلص."><b>😂 التحديات</b>اضغط</div>
+    <div class="card" data-m="المدرس بيتغير كل شوية وإحنا مش عارفين نذاكر اصلا ."><b>📚 مدرس جديد... تاني؟</b>اضغط</div>
+    <div class="card" data-m="أنا + حمو + أدهم. تلات أشخاص، مليون حكاية."><b>👬 أنا + حمو + أدهم</b>اضغط</div>
+  </div>
+</div></section>
+
+<section class="scene" id="s6"><div>
+  <p class="tag">CHAPTER 06</p><h2>من الملعب... للجيم. <span id="egg2" style="cursor:pointer">💪🏻</span></h2>
+  <p class="ln">التزام. تطور. ضحك. وإصرار إنك تكمّل حتى لو مفيش مزاج.</p>
+  <p class="ln hi">كنا بنروح نتمرن سوا... بس الأهم إننا كنا بنشجع بعض نكمل.</p>
+</div></section>
+
+<section class="scene" id="s7"><div>
+  <p class="tag">CHAPTER 07</p><h2>كل واحد فينا كان عنده حلم... 🚀</h2>
+  <p class="ln">حمو:  ألمانيا · 🩺 التمريض · 💰 نجاح واستقلال · 🚀 مستقبل قوي</p>
+  <p class="ln">وأنا: 💻 البرمجة.</p>
+  <div class="paths"><span class="walker" id="w1">🚶</span><span class="walker" id="w2">🚶</span></div>
+  <p class="ln">هو كان بيشجعني في البرمجة... وأنا كنت بشجعه في حلمه.</p>
+  <p class="ln hi">يمكن طريقنا مختلف... بس عمرنا ما وقفنا عن تشجيع بعض.</p>
+</div></section>
+
+<section class="scene" id="s8"><div>
+  <p class="tag">CHAPTER 08</p><h2>حمو والبرمجة 💻❤️</h2>
+  <p class="ln">وسط كل مرة كنت أشك فيها في نفسي... كان حمو من الناس اللي يفكروني إني أقدر.</p>
+  <p class="ln">يمكن هو بيدرس تمريض... وأنا بحاول أبني طريقي في البرمجة...</p>
+  <p class="ln hi">بس في النهاية كنا بنشجع بعض نوصل.</p>
+</div></section>
+
+<section class="scene" id="s9"><div>
+  <p class="tag">CHAPTER 09</p><h2>طيب والحب بقى... 😂</h2>
+  <p class="ln">وطبعًا مينفعش نحكي حكاية حمو من غير ما نجيب سيرة الحب 😂</p>
+  <p class="ln">الواد عنده حلم تاني غير ألمانيا والنجاح...</p>
+  <p class="ln hi">إنه يتجوز حبيبته ❤️</p>
+  <p class="ln">وربنا يكتبلكم الخير ويسعدكم ويجمعكم في الحلال.</p>
+</div></section>
+
+<section class="scene" id="s10"><div>
+  <p class="tag">CHAPTER 10</p><h2>الهدية 🎁</h2>
+  <button id="gift">🎁</button>
+  <div id="giftText" hidden>
+    <p class="ln">في عيد ميلادي اللي فات: جبتلي برجر من المزاج 🍔 وعملتلي كتاب عني وعنك.</p>
+    <p class="ln">بس المرة دي الدور عليا...</p>
+    <p class="ln hi">إنت عملتلي كتاب... فأنا قررت أعملك حكاية.</p>
+  </div>
+</div></section>
+
+<section class="scene" id="s11"><div>
+  <p class="tag">CHAPTER 11 · MEMORIES</p><h2>معرض الذكريات 📸</h2>
+  <div id="pol" class="pol"></div>
+  <p><button id="prev" style="min-width:90px">→</button> <button id="nxt" style="min-width:90px">←</button></p>
+</div></section>
+
+<section class="scene" id="s12"><div class="letter">
+  <p class="tag">CHAPTER 12</p><h2>لو في حاجة واحدة عايزك تعرفها... ❤️</h2>
+  <p class="ln">إنت مش مجرد صاحب بالنسبة ليا. إنت اخ .</p>
+  <p class="ln">إنت من الناس اللي كل ما السنين بتعدي، قيمتهم عندي بتزيد.</p>
+  <p class="ln">أنا فخور بيك، وفخور إنك بتسعى وبتتعب علشان مستقبلك.</p>
+  <p class="ln">وأتمنى أشوفك في ألمانيا وإنت حققت اللي نفسك فيه، ولما نوصل لأحلامنا نفتكر الأيام اللي كنا بنحلم فيها سوا.</p>
+  <p class="ln hi">كل سنة وإنت حمو... أخويا... وصاحبي... ومن أقرب الناس لقلبي.</p>
+</div></section>
+
+<section class="scene" id="s13"><div>
+  <p class="tag">CHAPTER 13 · THE FUTURE</p><h2>المستقبل 🇩🇪✨</h2>
+  <ul class="tl"><li>2007 — البداية</li><li>الطفولة</li><li>الملعب</li><li>ثانوي</li><li>الجيم</li><li>كلية التمريض</li><li>ألمانيا </li><li>النجاح</li><li class="hi">الحلم</li></ul>
+  <p class="ln">لسه الحكاية مخلصتش...</p><p class="ln hi">إحنا لسه في أولها.</p>
+</div></section>
+
+<section class="scene" id="s14"><div>
+  <p id="d1" class="tag" style="font-size:1.2rem"></p>
+  <p id="d2" class="big" style="font-size:1.4rem;min-height:2em"></p>
+  <h1 class="bday" id="hb" style="opacity:0;transition:2s">HAPPY BIRTHDAY<br>HAMO ❤️</h1>
+  <p class="ln hi" id="f1" style="opacity:0">كل سنة وإنت طيب يا أخويا وصاحبي.</p>
+  <p class="ln" id="f2" style="opacity:0">19 سنة من حياتك... وأنا محظوظ إني كنت جزء من حكاية منهم.</p>
+  <p class="ln hi" id="f3" style="opacity:0">لسه الجاي أحلى. 🚀</p>
+  <button id="egg3" hidden>فاكر إنك خلصت؟ 😂</button>
+</div></section>
+
+<script src="script.js"></script>
+</body>
+</html>

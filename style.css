@@ -1,0 +1,51 @@
+/* ===== حكاية حمو — الهوية: ليل + ذهب خفيف + عنابي ===== */
+:root{--ink:#0b0809;--ink2:#17100f;--cream:#f3ead8;--gold:#c9a25a;--wine:#7a1f2e}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;overflow:hidden;background:var(--ink);color:var(--cream);font-family:'Tajawal',sans-serif;font-size:18px;line-height:1.9}
+h1,h2,.big{font-family:'Amiri',serif;font-weight:700;line-height:1.35}
+.scene{position:fixed;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px 20px 90px;overflow-y:auto;overflow-x:hidden}
+.scene.on{display:flex;animation:in .9s ease both}
+@keyframes in{from{opacity:0;filter:blur(10px);transform:scale(1.03)}to{opacity:1;filter:none;transform:none}}
+.scene>*{max-width:640px;width:100%}
+.tag{color:var(--gold);font-size:.8rem;letter-spacing:.25em;direction:ltr;margin-bottom:6px}
+h2{font-size:clamp(1.7rem,6vw,2.6rem);margin-bottom:18px}
+.ln{opacity:0;transform:translateY(12px);animation:ln .8s ease forwards;margin:6px 0}
+@keyframes ln{to{opacity:1;transform:none}}
+.hi{color:var(--gold)}
+button{font:inherit;cursor:pointer;color:var(--cream);background:transparent;border:1px solid var(--gold);padding:12px 26px;min-height:46px;border-radius:40px;margin-top:20px;transition:.3s}
+button:hover{background:var(--gold);color:var(--ink)}
+#next{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);z-index:5;background:var(--ink);display:none}
+#music{position:fixed;top:14px;left:14px;z-index:9;font-size:.85rem;padding:6px 14px;min-height:40px;background:var(--ink)}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:4}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:14px}
+.card{border:1px solid #3a2a22;background:var(--ink2);padding:14px;border-radius:12px;transition:.3s;cursor:pointer;font-size:.95rem}
+.card:hover{transform:translateY(-5px) rotate(-1.5deg);border-color:var(--gold)}
+.card b{display:block;color:var(--gold)}
+#s2{background:radial-gradient(circle at 50% 0,#2a1a10,var(--ink));font-family:'Amiri',serif}
+#s2 .card{background:var(--cream);color:#2a1a10;border:0}#s2 .card b{color:var(--wine)}
+#s3{background:repeating-linear-gradient(0deg,#0f2a17,#0f2a17 60px,#12331d 60px,#12331d 120px)}
+#ball{font-size:2.4rem;display:inline-block;animation:roll 2.4s ease-in-out infinite alternate}
+@keyframes roll{from{transform:translateX(-90px) rotate(0)}to{transform:translateX(90px) rotate(540deg)}}
+#s4{background:radial-gradient(circle at 50% 100%,#3a1118,var(--ink) 70%)}
+#s6 h2{font-size:clamp(2rem,9vw,3.4rem)}
+.paths{height:140px;position:relative}
+.walker{position:absolute;font-size:1.8rem;bottom:0;left:calc(50% - 14px);animation:walk 4s ease-out forwards}
+#w1{--x:-110px;--y:-100px}#w2{--x:110px;--y:-50px}
+@keyframes walk{to{transform:translate(var(--x),var(--y))}}
+#gift{font-size:5rem;animation:bob 1.6s ease-in-out infinite;background:none;border:0;min-height:0}
+#gift:hover{background:none}
+@keyframes bob{50%{transform:translateY(-10px) rotate(4deg)}}
+.pol{background:var(--cream);color:#2a1a10;padding:12px 12px 14px;border-radius:4px;box-shadow:0 12px 40px #000a;transform:rotate(-2deg)}
+.pol .ph{aspect-ratio:4/3;background:#2a2020;position:relative;display:flex;align-items:center;justify-content:center;color:var(--gold);overflow:hidden}
+.pol img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.t1{animation:in .8s}.t2{animation:flip .8s}.t3{animation:slide .8s}
+@keyframes flip{from{transform:rotateY(90deg) rotate(-2deg)}}
+@keyframes slide{from{transform:translateX(80px) rotate(6deg);opacity:0}}
+.letter{text-align:right;border-right:2px solid var(--gold);padding-right:16px}
+#s13{background:radial-gradient(ellipse at 50% 120%,#1b1b3a,#05050c)}
+.tl{list-style:none;padding:0}
+.tl li:after{content:"↓";display:block;color:var(--gold);font-size:.8rem}.tl li:last-child:after{content:""}
+.bday{font-size:clamp(2.6rem,12vw,5rem);color:var(--gold);text-shadow:0 0 30px #c9a25a88}
+#toast{position:fixed;top:60px;left:50%;transform:translateX(-50%);background:var(--wine);padding:10px 20px;border-radius:12px;z-index:10;opacity:0;transition:.4s;pointer-events:none;max-width:90vw;text-align:center}
+#toast.on{opacity:1}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important}}
