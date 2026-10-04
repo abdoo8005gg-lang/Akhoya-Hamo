@@ -20,12 +20,13 @@ function go(i){
   s.querySelectorAll('.ln').forEach((l,k)=>{ if(i<14) l.style.animationDelay=(.4+k*.9)+'s' });
   $('#next').style.display=(i>0&&i<14)?'block':'none';
   $('#next').disabled=false;
+  $("#back").style.display = i>0 ? "block" : "none";
   if(i==10){$('#next').style.display='none'}
   if(i==11)showPhoto(0);
   if(i==14)finale();
 }
 $('#next').onclick=()=>go(cur+1);
-
+$("#back").onclick=()=>go(cur-1);
 // ----- شاشة البداية: كتابة حرفًا حرفًا -----
 async function typeLine(el,t){for(const c of t){el.textContent+=c;await wait(55)}}
 async function intro(){
